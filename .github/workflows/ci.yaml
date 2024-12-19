@@ -77,7 +77,7 @@ jobs:
          sarif_file: bandit-report.sarif
     - name: Exit if Bandit fails
       run: |
-        if [ -n "$BANDIT_FAIL" ]; then
+        if [ -n "$BANDIT_FAILS" ]; then
           exit 1
         fi
 
