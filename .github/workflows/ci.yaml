@@ -83,11 +83,11 @@ jobs:
     - name: Build Docker image
       uses: docker/build-push-action@v5
       env:
-        COMPONENT: "build"
+        COMPONENT: 'build'
       with:
         context: .
         load: true
-        tags: ${COMPONENT}:latest
+        tags: ${ COMPONENT }:latest
 
   # Optional: Deploy to container registry
   # Uncomment and configure as needed
